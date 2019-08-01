@@ -19,11 +19,11 @@ class CreateBukusTable extends Migration
             $table->integer('noisbn');
             $table->string('penulis');
             $table->string('penerbit');
-            $table->integer('tahun');
+            $table->date('tahun');
             $table->integer('stok');
-            $table->float('harga_pokok');
-            $table->float('harga_jual');
-            $table->float('diskon');
+            $table->integer('harga_pokok');
+            $table->integer('harga_jual');
+            $table->integer('diskon');
             $table->timestamps();
         });
     }
